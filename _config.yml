@@ -1,61 +1,16 @@
-# Site settings
-title: Your awesome title
-tagline: And Tagline
-email: webcreatelk@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Hi, I’m a professional UI/UX designrer and web developer. 
-  I love being minimal and creative.
-baseurl: "/gaya" # the subpath of your site, e.g. /blog/
-url: "http://webcreate.lk" # the base hostname & protocol for your site
-logourl: /assets/images/logo.png # Site logo
-author: "Tom Warlker"
-author_thumbnail: "/assets/images/avatar.jpg" # Author avatar
-# Theme customization - please change from the defaults!
-theme:
-  # Color for sidebar bar, links, etc
-  highlight_color: "#205081" #205081" # "#272935"
-  # Social media links, leave blank to ignore
-  social: 
-    github: gayanvirajith
-    twitter: gayanvirajith
-    facebook: gayanvirajith
-    gplus: +gayanvirajith
-    # dribble: gayanvirajith
-    pinterest: gayanvirajith
-
-  # Enable share buttons on post footer
-  show_share_buttons: true
-
-  # Show author picure, name and social links on post footer
-  show_author_info: true
-
-  # Disqus comments manager - shortname
-  # disqus_shortname: gaya-webcreate
-
-  # Google Analytics/Webmaster key, leave blank to ignore
-  google_analytics_key: 
-  google_webmaster_key: 
-
-# Build settings
-markdown: kramdown
-
-# Permalinks
-permalink:        pretty
-
-# Pagination config
-paginate: 5
-
-# Files/Folders to be excluded from generated _site folder
-exclude: 
-  - CNAME
-  - Gemfile
-  - Rakefile
-  - README.md
-  - .gitignore
-  - .sass-cache
-  - Gemfile.lock
-
-# Sass conversion configs
-sass:
-  sass_dir: assets/css/_sass
-  style: :compressed
+markdown: rdiscount
+permalink: /:title/
+url: http://yonsm.net
+name: Yonsm.NET
+author: Yonsm
+qq: 123018
+email: Yonsm@msn.com
+duoshuo: yonsm
+beian: 浙ICP备12026616号
+cnzz: 119959
+weibo: 1885061391
+github: Yonsm
+pygments: true
+safe: true
+paginate: 20
+about: "这里是 Yonsm 的个人博客，创建于 2004 年。开始使用了 ExBlog 博客程序；之后长期（2004 ~ 2011）使用 Bo-Blog；2012 年更换为 WordProess；2013年7月迁移到 Jekyll @ GitHub。<br /><br />这里包含了部分个人的“折腾”过程、结论和成果，切换到分类模可以更快地找到感兴趣的内容，欢迎观赏、建议、拍砖……"
