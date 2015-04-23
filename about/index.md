@@ -22,5 +22,5 @@ GitHub : [http://github.com/{{ site.github }}](http://github.com/{{ site.github 
 ----
 
 {% if site.weibo %}
-[![新浪微博](http://service.t.sina.com.cn/widget/qmd/{{ site.weibo }}/f78fbcd2/1.png)](http://weibo.com/{{ site.weibo }})
+[![新浪微博](http://service.t.sina.com.cn/widget/qmd/1932581030/2dad15cd/3.png)](http://weibo.com/u/1932581030?s=6uyXnP)
 {% endif %}
