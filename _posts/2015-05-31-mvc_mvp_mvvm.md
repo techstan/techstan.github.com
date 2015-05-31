@@ -43,10 +43,6 @@ tags: mvvm
 
 参考资料
 http://www.ruanyifeng.com/blog/2015/02/mvcmvp_mvvm.html
-
-感谢antoniolg 提供的androidmvp实例
 https://github.com/antoniolg/androidmvp
-
-最后附上关于data-binding教程
 https://developer.android.com/tools/data-binding/guide.html
 
