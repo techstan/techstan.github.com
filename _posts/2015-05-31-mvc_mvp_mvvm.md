@@ -6,8 +6,6 @@ categories: 技术
 tags: mvvm
 ---
 
-> **本博客为个人原创，转载需在明显位置注明出处**
-
 前几天，Google I/O 2015 开始支持Data Binding（双向绑定），也称作为MVVM----
 
 记得刚刚学开发的时候，只记得那时比流行MVC，这里来简单介绍一下MVC
