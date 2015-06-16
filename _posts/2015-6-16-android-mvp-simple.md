@@ -48,7 +48,7 @@ tags: mvp
     	void showLoading();
     	void hideLoading();
     	void showError();
-    	／／填充数据
+    	//填充数据
     	void setWeatherInfo(String s);
 	}
 	{% endhighlight %}
