@@ -1,4 +1,5 @@
 markdown: rdiscount
+highlighter: pygments
 permalink: /:title/
 url: http://techstan.me
 name: techstan

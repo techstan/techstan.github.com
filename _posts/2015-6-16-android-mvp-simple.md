@@ -13,7 +13,7 @@ tags: mvp
    model层提供抽象接口，方便解耦。
    
    Model层抽象接口
-   
+   {% highlight java linenos %}
    	/**
  	* Created by lenovo on 2015/6/15.
  	* 天气model的接口
@@ -21,7 +21,7 @@ tags: mvp
 	public interface WeatherModel {
     	void loadWeather(OnWeatherListener listener);
 	}
-	
+	{% endhighlight %}
    Model层抽象实现：
    
    	@Override
