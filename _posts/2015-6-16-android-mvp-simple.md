@@ -23,7 +23,7 @@ tags: mvp
 	}
 	{% endhighlight %}
    Model层抽象实现：
-   
+    {% highlight java linenos %}
    	@Override
     public void loadWeather(final OnWeatherListener listener) {
         	String url = "http://www.weather.com.cn/adat/sk/101280601.html";
@@ -39,11 +39,11 @@ tags: mvp
             }
         });
     }
-    
+    {% endhighlight %}
     
     
    View层的同样提供抽象接口，方便解耦。
-   	
+   	{% highlight java linenos %}
    	public interface WeatherView {
     	void showLoading();
     	void hideLoading();
@@ -51,11 +51,13 @@ tags: mvp
     	／／填充数据
     	void setWeatherInfo(String s);
 	}
+	{% endhighlight %}
 
 	
 这样仅仅通过接口对接，再利用Presenter来负责对接UI与数据逻辑。
 	 presenter接口类WeatherPresenter.java和OnWeatherListener.java
 	 
+	 {% highlight java linenos %}
 	 /**
  	  * Created by techstan on 2015/6/15.
  	  * 获取天气的逻辑
@@ -63,14 +65,15 @@ tags: mvp
 	 public interface WeatherPresenter {
    		void getWeather();
 	 }
-	 
+	 {% endhighlight %}
 -------------------------------------------
 	 
+	 {% highlight java linenos %}
 	 /**
  	  * Created by techstan on 2015/6/15.
 	  * 在Presenter层实现，给Model层回调，更改View层的状态，确保Model层不直       接操作View层
  	 */
- 	 
+	 
 	 public interface OnWeatherListener {
      /**
       * 成功的回调
@@ -81,14 +84,15 @@ tags: mvp
      * 失败的回调
      */
      void error();
+	 {% endhighlight %}
 	
    Presenter的实现类  WeatherPresenterImpl.java
-
+    {% highlight java linenos %}
 	/**
      * Created by techstan on 2015/6/15.
      * presenter的实现
      */
-	public class WeatherPresenterImpl implements 		WeatherPresenter,OnWeatherListener{
+	public class WeatherPresenterImpl implements WeatherPresenter,OnWeatherListener{
 
     /*Presenter作为中间层，持有View和Model的引用*/
     private WeatherView weatherView;
@@ -116,9 +120,9 @@ tags: mvp
         weatherView.hideLoading();
         weatherView.showError();
     }
-
+     {% endhighlight %}
    然后WeatherActivity中直接实现WeatherView接口，
-   
+   {% highlight java linenos %}
   	@Override
 	protected void initializeData() {
 		 weatherPresenter = new WeatherPresenterImpl(this); //传入WeatherView
@@ -154,6 +158,7 @@ tags: mvp
 			e.printStackTrace();
 		}
 	}
+	 {% endhighlight %}
 
 这样一个mvp架构的实例就出来了。从实例中可以看出，view中只负责处理ui部分，Presenter调用Model处理完数据之后，再通过View的抽象接口更新View显示的信息，实现了完整的解耦UI与逻辑操作，可能小型app这样写感觉比较麻烦，但是一旦项目做大，那么很有必要采用这种mvp架构，这样分工更明确，代码结构层次更清晰。也更方便调试
 
