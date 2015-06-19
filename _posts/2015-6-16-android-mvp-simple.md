@@ -7,9 +7,8 @@ tags: mvp
 
    上一篇主要讲解了MVP的初步使用，现在我们来写一个实例来了解mvp
 工程目录结构大概如下。
-
 	![mvp](/images/mvpimage.png)
-
+	
    model层提供抽象接口，方便解耦。
    
    Model层抽象接口
