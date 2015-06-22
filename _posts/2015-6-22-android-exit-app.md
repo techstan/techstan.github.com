@@ -16,9 +16,9 @@ https://developer.android.com/guide/components/tasks-and-back-stack.html
 &emsp;&emsp;关于四种启动，standard,singleTop,singleTask,singleInstance这里不再赘述。
 
 &emsp;&emsp;为了更好的退出app，我们将利用到四种启动模式的singleTask.
-	
-	The system creates a new task and instantiates the activity at the root of the new task. However, if an instance of the activity already exists in a separate task, the system routes the intent to the existing instance through a call to its onNewIntent() method, rather than creating a new instance. Only one instance of the activity can exist at a time.
 
+	The system creates a new task and instantiates the activity at the root of the new task. However, if an instance of the activity already exists in a separate task, the system routes the intent to the existing instance through a call to its onNewIntent() method, rather than creating a new instance. Only one instance of the activity can exist at a time.
+	
 &emsp;&emsp;大概意思是，以"singleTask"方式启动的Activity，全局只有唯一个实例存在，因此，当我们第一次启动这个Activity时，系统便会创建一个新的任务，并且初始化一个这样的Activity的实例，放在新任务的底部，如果下次再启动这个Activity时，系统发现已经存在这样的Activity实例，就会调用这个Activity实例的onNewIntent成员函数，从而把它激活起来。从这句话就可以推断出，以"singleTask"方式启动的Activity总是属于一个任务的根Activity。
 
 &emsp;&emsp;利用将首页MainActivity的launchMode配置成singleTask( 当然也可以配置为singleTop)
