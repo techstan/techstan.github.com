@@ -8,7 +8,7 @@ tags: exit app
 
 &emsp;&emsp;在以往的开发过程中，我们通常是利用一个自定义的AppManager，将所有的Activity添加到这个栈里面。退出时逐个finish.
 
-&emsp;&emsp;其实本身的Activity有自己的ActivityManager系统来帮我们管理这个栈。如果自己写一套，可能会造成activity不能释放，不稳当的因素。
+&emsp;&emsp;其实本身的Activity有自己的ActivityManager系统来帮我们管理这个栈。如果自己写一套，可能会造成activity不能释放，不稳定的因素。
 
 &emsp;&emsp;google官方文档中有讲解到给activity添加launchMode
 https://developer.android.com/guide/components/tasks-and-back-stack.html
