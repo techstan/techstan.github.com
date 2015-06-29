@@ -9,7 +9,7 @@ tags: custom Toast
 &nbsp;&nbsp;这应该算是很早以前一个小技巧了，当我们多次弹出toast的时候，toast会依此得显示，我们并不希望如此，我们希望不要一直重复的提醒了。
 	
 &nbsp;&nbsp;直接贴代码吧！
-	
+	{% highlight java linenos %}
 	public class CustomToast{
 	
 		private static Toast mToast;
@@ -64,5 +64,6 @@ tags: custom Toast
 			showToast(mContext, mContext.getResources().getString(resId), duration);
 		}
 	}
+	{% endhighlight %}
 
 &nbsp;&nbsp;代码非常简单。通常我们在开发过程中，使用最多的是makeText来显示toast.但这样也会有一个问题，因为每次都new一个toast出来，造成应用退出后都不能取消toast。而通过自定义，开启线程取消toast也更好的解决了这个问题。这也算是开发中的一个小技巧。
