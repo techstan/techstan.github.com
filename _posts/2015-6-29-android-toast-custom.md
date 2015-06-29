@@ -35,7 +35,7 @@ tags: custom Toast
 			return mToast;
 		}
 
-	public static void showToast(Context mContext, String text, int duration) {
+		public static void showToast(Context mContext, String text, int duration) {
 			//关键代码
 			mHandler.removeCallbacks(r);
 			if (mToast != null){
