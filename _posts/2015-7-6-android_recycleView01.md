@@ -6,10 +6,10 @@ tags: RecycleView
 ---
 > **本博客为个人原创，转载需在明显位置注明出处**
 	
-&nbsp;&nbsp;&nbsp;&nbsp;到今天才认真的看了下Material Desgin控件之一RecycleView,好吧，我是真懒。
+&nbsp;&nbsp;到今天才认真的看了下Material Desgin控件之一RecycleView,好吧，我是真懒。
 	今天写了个demo算是初步了解下RecycleView,话不多说，直接上代码。
 	
-依赖哪些Library
+依赖哪些Library  
 
 	{% highlight java linenos %}
 	dependencies {
@@ -50,7 +50,7 @@ layout布局文件
 &nbsp;&nbsp;然后我们要设置Adapter，这是关键的一步。也和ListView有一点不一样。ViewHolder也不再是自定义的独立的类了，它们都要继承子RecyclerView的Adapter和ViewHolder内部类
 
 	{% highlight java linenos %}
-	public class MyAdapter extends 				     		RecyclerView.Adapter<MyAdapter.ViewHolder>{
+	public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
 
     	public ArrayList<String> datas;
 
