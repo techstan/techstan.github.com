@@ -44,7 +44,7 @@ layout布局文件
     mRecyclerView.setHasFixedSize(true);
 
     //创建并设置Adapter
-    mRecyclerView.setAdapter(new BaseListAdapter(this));
+    mRecyclerView.setAdapter(new MyAdapter(datas));
     {% endhighlight %}
     
 &nbsp;&nbsp;然后我们要设置Adapter，这是关键的一步。也和ListView有一点不一样。ViewHolder也不再是自定义的独立的类了，它们都要继承子RecyclerView的Adapter和ViewHolder内部类
