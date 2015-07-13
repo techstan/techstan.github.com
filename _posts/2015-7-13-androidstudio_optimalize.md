@@ -13,7 +13,7 @@ tags: androidStudio
 
 &nbsp;&nbsp;&nbsp;&nbsp;网上也有一些关于优化的资料，实际开发中也有明显的优化效果，先列举网上常见的优化技巧。
 
-&nbsp;&nbsp;&nbsp;&nbsp;1.开启Gradle单独的守护进程，就是当电脑配置比较低的情况下，对程序进行编译，AndroidStudio容易崩掉，那么另外一个进行会及时的把你救活，免去了重启开启AndroidStudio的麻烦。
+&nbsp;&nbsp;&nbsp;&nbsp;1.开启Gradle单独的守护进程，就是当电脑配置比较低的情况下，对程序进行编译，AndroidStudio容易崩掉，那么另外一个进行会及时的把你救活，免去了重新开启AndroidStudio的麻烦。
 
 具体配置如下。
 
