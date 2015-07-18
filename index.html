@@ -13,7 +13,14 @@ layout: default
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y %H:%m" }}</span>
         <hr id="line">
 		<div class="content">
-		{{ post.excerpt }}
+		<!-- {{ post.excerpt }} -->
+          { % if post.content contains "<!-- more -->" %}
+{ { post.content | split:"<!-- more -->" | first % }}
+<h4><a href='{ {post.url}}' title='Read more...'>Read more...</a></h4>
+{ % else %}
+{ { post.content}}
+{ % endif %}
+
         </div>
 		<br>
       </li>
