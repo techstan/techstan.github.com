@@ -1,6 +1,7 @@
 markdown: rdiscount
 highlighter: pygments
 permalink: /:title/
+motto: 做有意义的事儿
 url: http://techstan.me
 name: techstan
 author: techstan
