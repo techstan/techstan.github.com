@@ -51,3 +51,7 @@ android:viewportWidth=”512” 矢量限定的高度为512
 	这个效果只有 Android5.0及之后的版本才支持，5.0以下需要第三方库支持(https://github.com/japgolly/svg-android)我也没去试，大家自行操作
 	
 &nbsp;&nbsp;&nbsp;&nbsp;总结:svg带来的好处是非常明显的，但是似乎还未流行起来，其带来的效率也非常明显，减少了android安装包的大小，也省去了ui设计以往的多套适配图片。据说svg可以通过VectorDrawable trimPathStart这个属性做动画，等有时间再进行实践吧！
+
+
+项目
+https://github.com/techstan/android_svg_simple
