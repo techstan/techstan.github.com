@@ -24,7 +24,8 @@ tags: gsonformat
     
  使用方式:
  	
- 	创建实体类，右键－－－－>Generate－－－>GsonFormat－－－>弹出对话框，将获取到的gson数据拷贝到对话框中，确定之后，就将生成需要的实体了。
+ 	创建实体类，右键－－－－>Generate－－－>GsonFormat－－－>弹出对话框，
+ 	将获取到的gson数据拷贝到对话框中，确定之后，就将生成需要的实体了。
  	
 
 但是要注意的是，此插件只适用于android studio和 Intellij IDEA 工具,eclipse 的少年请无视。
