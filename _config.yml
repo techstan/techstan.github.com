@@ -1,7 +1,6 @@
 markdown: rdiscount
 highlighter: pygments
 permalink: /:title/
-motto: 做有意义的事儿
 url: http://techstan.me
 name: techstan
 author: techstan
@@ -14,4 +13,3 @@ pygments: true
 safe: true
 paginate: 10
 about: "做你热爱的事，一切都会自然而然的发生"
-github_username:  techstan
